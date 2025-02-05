@@ -19,8 +19,6 @@
 #
 
 # OrangeFox settings
-TARGET_ARCH := arm
-FOX_AB_DEVICE := 1
 OF_HIDE_NOTCH := 1
 OF_USE_GREEN_LED := 0
 OF_FLASHLIGHT_ENABLE := 1
