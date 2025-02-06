@@ -14,6 +14,15 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 # Inherit from Infinix-X6532 device
 $(call inherit-product, device/infinix/Infinix_X6532/device.mk)
 
+##Define hardware platform
+PRODUCT_RELEASE_NAME := (Infinix_X5432)
+
+##Device path for OEM device tree
+DEVICE_PATH := (device/infinix/Infinix_X6532)
+
+##Inherit any OrangeFox-specific settings
+$(call inherit-product-if-exists, $(DEVICE_PATH)/fox_$(PRODUCT_RELEASE_NAME).mk)
+
 PRODUCT_DEVICE := Infinix_X6532
 PRODUCT_NAME := twrp_Infinix_X6532
 PRODUCT_BRAND := Infinix
